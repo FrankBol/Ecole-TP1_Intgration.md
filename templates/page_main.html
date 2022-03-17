@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block titre %}{% endblock %}</title>
+    <link rel="stylesheet" href="/static/css/style.css">
+    {% block script %}{% endblock %}
+</head>
+<body>
+<header>
+  <img src="../static/img/icons8-menu-arrondi-60.png" alt="">
+  <nav>
+    <ul>
+      <li><a href="/">Acceuil</a></li>
+      <li><a href="formulaire">Formulaire</a></li>
+      <li><a href="table">Table</a></li>
+    </ul>
+  </nav>
+  <div class="recherche-header">
+    <img src="/static/img/loupe.png" alt="">
+    <div><input type="text"></div>
+  </div>
+</header>
+<main>
+    {% block contenu %}{% endblock %}
+</main>
+<footer>
+    <div><p>"Pourquoi aller voir ailleur quand c'est parfait chez nous" </p></div>
+</footer>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-XFL6C59D52"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-XFL6C59D52');
+</script>
+</body>
+</html>

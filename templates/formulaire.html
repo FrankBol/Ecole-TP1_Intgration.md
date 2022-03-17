@@ -1,0 +1,49 @@
+{% extends 'page_main.html' %}
+
+{% block titre %}
+TP1-Formulaire
+{% endblock %}
+{% block script %}
+<script src="/static/js/formulaire.js" defer defer></script>
+{% endblock %}
+
+{% block contenu %}
+{% block header %}{% endblock %}
+<section class="formulaire">
+    <form action="#" method="#">
+        <fieldset>
+            <legend>Choix</legend>
+            <div>
+                <label for="">Choisir .....</label>
+                <select name="" id="" required>
+                    <optgroup label="Choix 1">
+                        <option value="">1</option>
+                        <option value="">1</option>
+                    </optgroup>
+                    <optgroup label="Choix 2">
+                        <option value="">11</option>
+                        <option value="">22</option>
+                    </optgroup>
+                </select>
+            </div>
+            <div>
+                <label for="">Votre Prénom :</label>
+                <input type="text" required>
+            </div>
+            <div>
+                <label for="">Votre Nom :</label>
+                <input type="text" id="mail" required>
+            </div>
+            <div>
+                <label for=""">E-Mail :</label>
+                <input type="email" id="email">
+            </div>
+            <div>
+                <label for="">Carte Crédit :</label>
+                <input type="text" required>
+            </div>
+            <div><button type="submit">Soumettre</button></div>
+        </fieldset>
+    </form>
+</section>
+{% endblock %}
