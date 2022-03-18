@@ -10,28 +10,16 @@ TP1-Formulaire
 {% block contenu %}
 {% block header %}{% endblock %}
 <section class="formulaire">
+    <h1>Courez la chance de gagner notre sélectoin de la semaine</h1>
     <form action="#" method="#">
         <fieldset>
-            <legend>Choix</legend>
+            <legend>Information Personel</legend>
             <div>
-                <label for="">Choisir .....</label>
-                <select name="" id="" required>
-                    <optgroup label="Choix 1">
-                        <option value="">1</option>
-                        <option value="">1</option>
-                    </optgroup>
-                    <optgroup label="Choix 2">
-                        <option value="">11</option>
-                        <option value="">22</option>
-                    </optgroup>
-                </select>
-            </div>
-            <div>
-                <label for="">Votre Prénom :</label>
+                <label for="">Prénom :</label>
                 <input type="text" required>
             </div>
             <div>
-                <label for="">Votre Nom :</label>
+                <label for="">Nom :</label>
                 <input type="text" id="mail" required>
             </div>
             <div>
@@ -39,8 +27,20 @@ TP1-Formulaire
                 <input type="email" id="email">
             </div>
             <div>
-                <label for="">Carte Crédit :</label>
-                <input type="text" required>
+                <label for="">Région:</label>
+                <select name="" id="" required>
+                    <optgroup label="Région de Montréal">
+                        <option value="mtl">Ile de Mtl</option>
+                        <option value="Laval">Laval</option>
+                        <option value="Longeuil">Longeuil</option>
+                        <option value="AutreMtl">Autre</option>
+                    </optgroup>
+                    <optgroup label="Région Québec">
+                        <option value="Ville de Québec">Ville de Québec</option>
+                        <option value="Levis">Levis</option>
+                        <option value="AutreQuebec">Autre</option>
+                    </optgroup>
+                </select>
             </div>
             <div><button type="submit">Soumettre</button></div>
         </fieldset>

@@ -3,27 +3,45 @@
 }
 body, html{
     height: 100%;
-/*----------------------------------HEAD------------------------------------*/
+    font-size:25px
 }
+h1{
+    font-size: 2.5em;
+}
+@media screen and (max-width: 1300px) {
+    body, html{
+        font-size:16px;
+    }
+}
+/*----------------------------------HEAD------------------------------------*/
 header{
     display: flex;
     align-items: center;
     justify-content: space-between;
     background-color: #757e73;
     padding: 0 20px;
-    height: 10vh;
+    height: 7vh;
 }
+header div:first-child{
+    display: flex;
+    align-items: center;
+}
+/* nav::before{
+    content: "";
+    background-image: url("../img/icons8-menu-arrondi-60.png");
+    z-index: 100;
+} */
 ul{
     display: flex;
     justify-content: space-between;
     list-style: none;
-    width: 500px;
-    margin-left: 130px;
+}
+li{
+    margin-right: 5vw;
 }
 li a{
     text-decoration: none;
     color: #c0c0c0;
-    font-size: 1.5em;
 }
 ul li:first-child a{
     color: white;
@@ -33,8 +51,7 @@ ul li:last-child a{
 }
 .recherche-header{
  display: flex;
- align-items: center;
- width: 215px;
+ width: 200px;
  justify-content: space-between;
 }
 .recherche-header input {
@@ -44,17 +61,12 @@ ul li:last-child a{
 }
 .recherche-header input:focus {
     background-color: burlywood;
-    box-shadow: 0 0 20px 8px burlywood;
+    box-shadow: 0 0 10px 5px burlywood;
 }
 /* ------------------------------------------PAGE ACCEUIL------------------------------------------ */
-/* .acceuil-main{
-    height:60vh;
-    margin-top:10vh;
-    display: flex;
-} */
 .acceuil-main{
     display: flex;
-    height:80vh;
+    height:78vh;
 }
 .noneDescription{
     display: none;
@@ -72,7 +84,13 @@ ul li:last-child a{
     width:40%;
     /* flex-grow: 2; */
 }
-.descriptionGin p::first-letter{
+.descriptionGin h1{
+    color: #757e73;
+}
+.descriptionGin h2{
+    margin:10% 0 3% 0;
+}
+.descriptionGin h2::first-letter{
     color: #757e73;
 }
 .next, .prev{
@@ -97,54 +115,56 @@ ul li:last-child a{
     width: 100%;
     height: 100%;
 }
-.acceuil-main h1{
-    font-size:3vw
-}
-.acceuil-main h2{
-    margin-top:40px;
-    margin-bottom: 10px;
-}
 .acceuil-main p, .acceuil-main h2{
     color: white;
 }
+/* ---------------------------------------Page concour------------------------------------------- */
+
 .formulaire{
-    position: relative;
-    margin-top: 100px;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    height: 78vh;
+    background-image: url(../img/concourImg.jpg);
+    background-repeat: no-repeat;
+    background-size:cover;
+}
+.formulaire h1{
+    color: white;
 }
 form{
-    margin-top: 200px;
-    width: 40%;
-    margin: auto;
+    width: 45vw;
 }
 fieldset{
-    background-color: rgb(209, 228, 209);
+    background-color: burlywood;
+    opacity: .9;
+    padding: 9%;
 }
 form div{
     margin-bottom: 30px;
     text-align: center;
 }
-form div label{
+form label{
     display: inline-block;
     width: 20%;
+    text-align: left;
+    color:white;
 }
-fieldset div:nth-child(2) select{
-    margin-top: 20px;
-    width: 149px;
+form label::after{
+    content: "*"
 }
 fieldset div:last-child{
     text-align: center;
     margin-top: 60px;
     margin-bottom: 0px;
 }
-form div label{
-    text-align: left;
+form select{
+    margin-right: 13px;
 }
 table{
     border-collapse: collapse;
 }
-/* #email{
-    border: solid red;
-} */
 .emailRouge{
     border: solid red;
 }
@@ -157,12 +177,15 @@ footer{
     align-items:center;
     justify-content:center;
     position: absolute;
-    height: 10vh;
+    height: 15vh;
     bottom: 0;
     right: 0;
     left: 0;
     background-color: rgb(231, 140, 21);
     color: white; 
+}
+footer p{
+    font-size:1.7em;
 }
 @media screen and (max-width: 700px) {
     .img{
@@ -170,7 +193,7 @@ footer{
     }
 }
 @media print {
-    .printForm{
+    header{
         display: none;
     }
 }
