@@ -1,8 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Sen:wght@400;700&display=swap');
+
 *{
     margin: 0;
 }
 body, html{
     height: 100%;
+    font-family: Sen;
+    background-color: burlywood
 /*----------------------------------HEAD------------------------------------*/
 }
 header{
@@ -139,9 +143,7 @@ fieldset div:last-child{
 form div label{
     text-align: left;
 }
-table{
-    border-collapse: collapse;
-}
+
 /* #email{
     border: solid red;
 } */
@@ -173,4 +175,20 @@ footer{
     .printForm{
         display: none;
     }
+}
+
+/* ---------------------------------------------- Table ---------------------------------------------------- */
+.tableContainer{
+    display: flex;
+    justify-content: center;
+}
+
+table{
+    margin-top: 5em;
+    border-collapse: collapse;
+    width: 80%;
+}
+td, th{
+    padding: 1em;
+    text-align: left;
 }
