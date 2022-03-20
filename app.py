@@ -8,13 +8,13 @@ app = Flask(__name__)
 def acceuil():
     return render_template("acceuil.html")
 
-@app.route("/formulaire")
+@app.route("/gin")
 def formulaire():
-    return render_template("formulaire.html")
+    return render_template("gin.html")
 
-@app.route("/table")
+@app.route("/concour")
 def table():
-    return render_template("table.html")
+    return render_template("concour.html")
 
 if __name__ == "__main__":
     app.run(debug=True)

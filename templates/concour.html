@@ -4,12 +4,11 @@
 TP1-Formulaire
 {% endblock %}
 {% block script %}
-<script src="/static/js/formulaire.js" defer defer></script>
+<script src="/static/js/concour.js"defer></script>
 {% endblock %}
 
 {% block contenu %}
-{% block header %}{% endblock %}
-<section class="formulaire">
+<main class="main-formulaire">
     <h1>Courez la chance de gagner notre sélectoin de la semaine</h1>
     <form action="#" method="#">
         <fieldset>
@@ -23,7 +22,7 @@ TP1-Formulaire
                 <input type="text" id="mail" required>
             </div>
             <div>
-                <label for=""">E-Mail :</label>
+                <label for="">E-Mail :</label>
                 <input type="email" id="email">
             </div>
             <div>
@@ -45,5 +44,5 @@ TP1-Formulaire
             <div><button type="submit">Soumettre</button></div>
         </fieldset>
     </form>
-</section>
+</main>
 {% endblock %}

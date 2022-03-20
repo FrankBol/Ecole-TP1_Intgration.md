@@ -4,19 +4,17 @@
 TP1-Acceuil
 {% endblock %}
 {% block script %}
-<script src="/static/js/main.js" defer></script>
+<script src="/static/js/acceuil.js" defer></script>
 {% endblock %}
 
 {% block contenu %}
-    <section class="acceuil-main">
-        <article>
-            <div class="img">
-                <img id="img"src="" alt="Image de .....">
-                <!-- <button id="prev" class="prev">next</button> -->
-                <img id="prev" class="prev" src="../static/img/gauche.png" alt="">
-                <img id="next" class="next" src="../static/img/droit.png" alt="">
-            </div>
-        </article>
+<main class="acceuil-main">
+    <section>       
+        <img id="img"src="" alt="Image de .....">
+        <img id="prev" class="prev" src="../static/img/gauche.png" alt="">
+        <img id="next" class="next" src="../static/img/droit.png" alt="">       
+    </section>
+    <section>
         <article id="sophia" class="noneDescription">
             <h1>Les Gins de la semaine</h1>
             <h2>Distillerie du Quai Sophia</h2>
@@ -27,14 +25,15 @@ TP1-Acceuil
                 Nul besoin d’artifices.  Sophia, glaçons, votre tonic favori. Simplicité. Classe. Efficacité. </p>
         </article>
         <article id="cirka" class="noneDescription">
-            <h1>Cirka Gin375</h1>
-            <h2>Rocher Malin</h2>
+            <h1>Les Gins de la semaine</h1>
+            <h2>Cirka Gin375</h2>
             <p>Crée afin de commémorer le 375e anniversaire de Montréal, notre GIN375 exprime avec audace les aromates indigènes québécois en combinant des plantes de la forêt boréale, des fruits de l’Estrie et du miel des Laurentides. Un vrai délice! <br>Un excellent gin à boire seul sur glace ou avec un tonic de haute qualité. Ce gin a remporté le titre prestigieux de “Meilleur gin aromatisé au Canada” au World Gin Awards en 2019. Il est aussi arrivé en 2e place pour le titre de “Meilleur gin aromatisé au monde” à cette même compétition </p>
         </article>
         <article id="radoune" class="noneDescription">
-            <h1>Gin Radoune</h1>
-            <h2>Rocher Malin</h2>
+            <h1>Les Gins de la semaine</h1>
+            <h2>Gin Radoune</h2>
             <p>Radoune est le croisement de l'histoire d'une culture riche et de la persévérance des Gaspésiens. Parfait équilibre entre sept principaux aromates gaspésiens, avec une base de baies de genévrier nordique, de graines de coriandre, et des champignons sauvages (chanterelles, chanterelles à  pied jaune, armillaires couleur de miel et matsutake), ce gin est aromatique, frais et floral avec d'élégantes notes sensorielles rappelant une marche en forêt agrémentée d'odeurs d'épices et de champignons.</p>
         </article>
     </section>
+</main>
 {% endblock %}

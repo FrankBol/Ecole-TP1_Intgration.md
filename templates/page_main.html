@@ -9,27 +9,28 @@
     {% block script %}{% endblock %}
 </head>
 <body>
-<header>
-<div class="a">
+{% block printStart %}{% endblock %}<header>
+<div>
   <img src="../static/img/burger.png" alt="">
   <nav>
     <ul>
       <li><a href="/">Acceuil</a></li>
-      <li><a href="formulaire">Formulaire</a></li>
-      <li><a href="table">Table</a></li>
+      <li><a href="gin">Gin</a></li>
+      <li><a href="concour">Concour</a></li>
     </ul>
   </nav>
 </div>
-  <div class="recherche-header">
-    <img src="/static/img/loupe.png" alt="">
-    <div><input type="text"></div>
-  </div>
+<div>
+    <img id="loupe" src="/static/img/loupe.png" alt="">
+    <input id="search" type="text">
+</div>
 </header>
+{% block printEnd %}{% endblock %}
 <main>
     {% block contenu %}{% endblock %}
 </main>
 <footer>
-    <div><p>"Pourquoi aller voir ailleur quand c'est parfait chez nous" </p></div>
+    <div><p>"Pourquoi aller voir ailleur quand c'est parfait chez sois" </p></div>
 </footer>
     <!-- Global site tag (gtag.js) - Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-XFL6C59D52"></script>

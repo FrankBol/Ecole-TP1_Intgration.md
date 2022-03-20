@@ -5,18 +5,20 @@ const sophia = document.querySelector("#sophia");
 const cirka = document.querySelector("#cirka");
 const radoune = document.querySelector("#radoune");
 
-
+let loupe = document.querySelector("#loupe");
+document.querySelector("#search").addEventListener("focus", () => loupe.style.display = "none");
+document.querySelector("#search").addEventListener("blur", () => loupe.style.display = "");
 
 let tabImg = ["/static/img/1.jpg","/static/img/2.jpg","/static/img/3.jpg"];
 let compteurImg = 0;
 img.src = tabImg[compteurImg];
 
-const tabGin =[sophia, cirka, radoune];
-tabGin[compteurImg].classList.add("descriptionGin");
+let tablGin =[sophia, cirka, radoune];
+tablGin[compteurImg].classList.add("descriptionGin");
 
 next.addEventListener('click', nextItem);
 function nextItem(){
-    tabGin[compteurImg].classList.remove("descriptionGin");
+    tablGin[compteurImg].classList.remove("descriptionGin");
     compteurImg++;
     if(compteurImg == tabImg.length) compteurImg = 0;
     displayImg();
@@ -25,7 +27,7 @@ function nextItem(){
 
 prev.addEventListener('click', prevItem);
 function prevItem(){
-    tabGin[compteurImg].classList.remove("descriptionGin");
+    tablGin[compteurImg].classList.remove("descriptionGin");
     compteurImg--;
     if(compteurImg == -1) compteurImg = tabImg.length - 1;
     displayImg();
@@ -36,6 +38,6 @@ displayImg = () => img.src = tabImg[compteurImg]
 
 
 displayDescription = () => {
-    tabGin[compteurImg].classList.add("descriptionGin");
+    tablGin[compteurImg].classList.add("descriptionGin");
 };
 

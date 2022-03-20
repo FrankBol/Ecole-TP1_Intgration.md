@@ -1,0 +1,98 @@
+{% extends 'page_main.html' %}
+
+{% block titre %}
+TP1-Table
+{% endblock %}
+{% block script %}
+<script src="/static/js/gin.js"defer></script>
+{% endblock %}
+
+{% block printStart %}
+<div class="nonePrint">
+{% endblock %}
+{% block printEnd %}
+</div>
+{% endblock %}
+
+{% block contenu %}
+<main>
+<table>
+    <thead>
+        <tr>
+            <th>Nom</th>
+            <th>Provenance</th>
+            <th>Quantite</th>
+            <th>Alcool</th>
+        </tr>
+    </thead>
+    <tr>
+        <tbody>
+            <td>Charlevoyon Gin de Petit-Lait</td>
+            <td>Québec, Charlevoix</td>
+            <td>750ml</td>
+            <td>40%</td>
+        </tr>
+        <tr>
+            <td>Cirka gin 375 Edition Limite</td>
+            <td>Québec, Montréal</td>
+            <td>500ml</td>
+            <td>40%</td>
+        </tr>
+        <tr>
+            <td>Cirka Navy Strenght</td>
+            <td>Québec, Montréal</td>
+            <td>500ml</td>
+            <td>57,1%</td>
+        </tr>
+        <tr>
+            <td>Cirka Sauvage</td>
+            <td>Québec, Montréal</td>
+            <td>750ml</td>
+            <td>44%</td>
+        </tr>
+        <tr>
+            <td>Comont</td>
+            <td>Québec, Bedford</td>
+            <td>750ml</td>
+            <td>43%</td>
+        </tr>
+        <tr>
+            <td>Comont Franvoises Noires</td>
+            <td>Québec, Bedford</td>
+            <td>750ml</td>
+            <td>30%</td>
+        </tr>
+        <tr>
+            <td>Cote des Sants Prenium</td>
+            <td>Québec, Mirabel</td>
+            <td>750ml</td>
+            <td>46,2%</td>
+        </tr>
+        <tr>
+            <td>Gin Furlong</td>
+            <td>Québec, Gamby</td>
+            <td>750ml</td>
+            <td>43%</td>
+        </tr>
+        <tr>
+            <td>Distellerie des appalaches Alphonse</td>
+            <td>Québec, Lévis</td>
+            <td>700ml</td>
+            <td>0,1%</td>
+        </tr>
+        <tr>
+            <td>Distellerie des appalaches Kepler Reserve</td>
+            <td>Québec, Lévis</td>
+            <td>700ml</td>
+            <td>40%</td>
+        </tr>
+        <tr>
+            <td>Destillerie du Fjord 48 Chemin Price</td>
+            <td>Québec, Saint-David-de-Falardeau</td>
+            <td>500ml</td>
+            <td>%</td>
+        </tr>
+        </tbody>
+</table>
+</main>
+{% endblock %}
