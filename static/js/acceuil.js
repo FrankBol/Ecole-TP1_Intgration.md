@@ -5,10 +5,6 @@ const sophia = document.querySelector("#sophia");
 const cirka = document.querySelector("#cirka");
 const radoune = document.querySelector("#radoune");
 
-let loupe = document.querySelector("#loupe");
-document.querySelector("#search").addEventListener("focus", () => loupe.style.display = "none");
-document.querySelector("#search").addEventListener("blur", () => loupe.style.display = "");
-
 let tabImg = ["/static/img/1.jpg","/static/img/2.jpg","/static/img/3.jpg"];
 let compteurImg = 0;
 img.src = tabImg[compteurImg];

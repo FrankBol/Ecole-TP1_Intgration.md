@@ -118,6 +118,9 @@ height: 20px;
     background-repeat: no-repeat;
     background-size:cover;
 }
+legend{
+    text-align:left;
+}
 .main-formulaire h1{
     padding: 1em;
     color: white;
@@ -141,15 +144,18 @@ form label{
     text-align: left;
     color:white;
 }
+form input, select{
+    width: 13em;
+}
 form label::after{
     content: "*"
 }
-fieldset div:last-child{
+fieldset>div:last-child{
     margin-top: 60px;
 }
-/* form select{
-    margin-right: 13px;
-} */
+form div:nth-child(4)>input{
+    outline: none;
+}
 /* ---------------------------------------------- Table ---------------------------------------------------- */
 table{
     margin: 4em auto;
