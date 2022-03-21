@@ -24,11 +24,12 @@ header div:first-child{
     display: flex;
     align-items: center;
 }
-/* nav::before{
-    content: "";
-    background-image: url("../img/icons8-menu-arrondi-60.png");
-    z-index: 100;
-} */
+header div:last-child a{
+    color: white;
+    text-decoration: none;
+    font-size: .6em;
+    margin-left: 1em;
+}
 li{
     display: inline-block;
     margin-right: 5vw;
@@ -58,6 +59,9 @@ header div:last-child img{
 position: relative;
 left:25px;
 height: 20px;
+}
+header div:first-child img{
+   width: 2.5em;
 }
 /* ------------------------------------------PAGE ACCEUIL------------------------------------------ */
 .acceuil-main p, .acceuil-main h2{
@@ -128,6 +132,7 @@ legend{
 form{
     width: 45%;
     margin: auto;
+
 }
 fieldset{
     background-color: burlywood;
@@ -153,8 +158,13 @@ form label::after{
 fieldset>div:last-child{
     margin-top: 60px;
 }
-form div:nth-child(4)>input{
+form div:nth-child(4)>input:valid{
     outline: none;
+    border-color:rgb(0, 255, 0);
+}
+form div:nth-child(4)>input:invalid{
+    outline: none;
+    border-color:red;
 }
 /* ---------------------------------------------- Table ---------------------------------------------------- */
 table{

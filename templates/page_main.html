@@ -6,13 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>{% block titre %}{% endblock %}</title>
     <link rel="stylesheet" href="/static/css/style.css">
+    <link rel="icon" href="/static/img/favicon.png" type="image/png">
     <script src="/static/js/allpage.js" defer></script>
     {% block script %}{% endblock %}
 </head>
 <body>
 {% block printStart %}{% endblock %}<header>
 <div>
-  <img src="../static/img/burger.png" alt="">
+  <img src="../static/img/logoSite.png" alt="Logo bouteille de Gin">
   <nav>
     <ul>
       <li><a href="/">Acceuil</a></li>
@@ -22,6 +23,8 @@
   </nav>
 </div>
 <div>
+    <a href="#">Partager</a>
+    <a href="#">Connection</a>
     <img id="loupe" src="/static/img/loupe.png" alt="">
     <input id="search" type="text">
 </div>
