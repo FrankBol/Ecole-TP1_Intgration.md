@@ -12,6 +12,9 @@ body, html{
 h1{
     font-size: 2.5em;
 }
+header div:first-child img:hover, a:hover, td:hover, form label:hover{
+    opacity: .5;
+}
 /*----------------------------------HEADER------------------------------------*/
 header{
     display: flex;
@@ -20,50 +23,47 @@ header{
     height: 9vh;
     padding: 0 1em;
 }
+header div:first-child img{
+    width: 2.5em;
+    cursor: pointer;
+ }
 header div:first-child{
     display: flex;
     align-items: center;
 }
 header div:last-child a{
-    color: white;
-    text-decoration: none;
-    font-size: .6em;
-    margin-left: 1em;
+    font-size: .8em;
+    margin: 0 1.5em;
 }
 li{
     display: inline-block;
     margin-right: 5vw;
     font-size: 1.3em;
 }
-li a{
+header a{
     text-decoration: none;
-    color: #c0c0c0;
+    color: white;
 }
 ul li:first-child a{
-    color: white;
+    color: #c0c0c0;
 }
 ul li:last-child a{
     color: black;
 }
 header div:last-child{
- display: flex;
- align-items: center;
+    display: flex;
+    align-items: center;
 }
 header div:last-child input {
-border-radius: 10px;
-border: none;
-width: 180px;
-height:25px;
+    border-radius: 10px;
+    border: none;
+    width: 180px;
+    height:25px;
 }
 header div:last-child img{
-position: relative;
-left:25px;
-height: 20px;
+    position: absolute;
 }
-header div:first-child img{
-   width: 2.5em;
-}
-/* ------------------------------------------PAGE ACCEUIL------------------------------------------ */
+/* ------------------------------------------PAGE ACCUEIL------------------------------------------ */
 .acceuil-main p, .acceuil-main h2{
     color: white;
 }
@@ -95,7 +95,7 @@ header div:first-child img{
     color: #757e73;
 }
 .descriptionGin h2{
-    margin:8% 0 2%;
+    margin:5% 0 1%;
 }
 .descriptionGin h2::first-letter{
     color: #757e73;
@@ -113,7 +113,7 @@ header div:first-child img{
     top: 50%;
     transform: translatey(-50%)
 }
-/* ---------------------------------------PAGE CONCOUR------------------------------------------- */
+/* ---------------------------------------PAGE CONCOURS------------------------------------------- */
 
 .main-formulaire{
     text-align: center;
@@ -126,7 +126,7 @@ legend{
     text-align:left;
 }
 .main-formulaire h1{
-    padding: 1em;
+    padding: .5em;
     color: white;
 }
 form{
@@ -166,7 +166,7 @@ form div:nth-child(4)>input:invalid{
     outline: none;
     border-color:red;
 }
-/* ---------------------------------------------- Table ---------------------------------------------------- */
+/* ----------------------------------------------PAGE GIN ---------------------------------------------------- */
 table{
     margin: 4em auto;
     border-collapse: collapse;

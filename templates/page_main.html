@@ -13,20 +13,22 @@
 <body>
 {% block printStart %}{% endblock %}<header>
 <div>
-  <img src="../static/img/logoSite.png" alt="Logo bouteille de Gin">
+  <img src="../static/img/logoSite.png" alt="Logo bouteille de Gin" onclick="logo()">
   <nav>
     <ul>
-      <li><a href="/">Acceuil</a></li>
+      <li><a href="/">Accueil</a></li>
       <li><a href="gin">Gin</a></li>
-      <li><a href="concour">Concour</a></li>
+      <li><a href="concour">Concours</a></li>
     </ul>
   </nav>
 </div>
 <div>
     <a href="#">Partager</a>
     <a href="#">Connection</a>
-    <img id="loupe" src="/static/img/loupe.png" alt="">
+  <div>
+    <img id="loupe" src="/static/img/loupe.png" alt="loupe de recherche">
     <input id="search" type="text">
+  </div>
 </div>
 </header>
 {% block printEnd %}{% endblock %}
@@ -34,7 +36,7 @@
     {% block contenu %}{% endblock %}
 </main>
 <footer>
-    <div><p>"Pourquoi aller voir ailleur quand c'est parfait chez sois" </p></div>
+    <div><p>"Pourquoi aller voir ailleurs quand c'est parfait chez-soi" </p></div>
 </footer>
     <!-- Global site tag (gtag.js) - Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-XFL6C59D52"></script>
