@@ -15,6 +15,9 @@ h1{
 header div:first-child img:hover, a:hover, td:hover, form label:hover{
     opacity: .5;
 }
+input:focus{
+    background-color: #c0c0c0;
+}
 /*----------------------------------HEADER------------------------------------*/
 header{
     display: flex;
@@ -119,7 +122,6 @@ header div:last-child img{
     text-align: center;
     height: 78vh; 
     background-image: url(../img/concourImg.jpg);
-    background-repeat: no-repeat;
     background-size:cover;
 }
 legend{
@@ -137,7 +139,7 @@ form{
 fieldset{
     background-color: burlywood;
     opacity: .9;
-    padding: 5%;
+    padding: 50px 0 15px;
     color: white;
 }
 form div{
@@ -153,16 +155,16 @@ form input, select{
     width: 13em;
 }
 form label::after{
-    content: "*"
+    content: "*";
 }
 fieldset>div:last-child{
-    margin-top: 60px;
+    margin-top: 50px;
 }
-form div:nth-child(4)>input:valid{
+form div:nth-child(4)>input:valid:focus{
     outline: none;
     border-color:rgb(0, 255, 0);
 }
-form div:nth-child(4)>input:invalid{
+form div:nth-child(4)>input:invalid:focus{
     outline: none;
     border-color:red;
 }
@@ -214,4 +216,3 @@ footer{
         display: none;
     }
 }
-
